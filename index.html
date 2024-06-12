@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - NextGen Digital Impact LLC</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="product.js" defer></script>
+    <title>Book a Consultation - NextGen Digital Impact LLC</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,17 +13,51 @@
             <img src="logo.png" alt="NextGen Digital Impact LLC Logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="customer-experience.html">Customer Experience</a></li>
+                <li><a href="digital-transformation.html">Digital Transformation</a></li>
+                <li><a href="merchandising.html">Merchandising</a></li>
+                <li><a href="strategic-sourcing.html">Strategic Sourcing</a></li>
+                <li><a href="collaborative-programs.html">Collaborative Programs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="consultation-booking.html">Book a Consultation</a></li>
-                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Our Services</h1>
-            <div class="products-container">
-                <!-- Products will be dynamically added here -->
-            </div>
+            <h1>Book a Consultation</h1>
+            <p>Schedule a consultation with our experts to discuss your business needs and learn how we can help you achieve your goals.</p>
+            <form action="submit_booking.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="service">Service of Interest:</label>
+                <select id="service" name="service" required>
+                    <option value="customer-experience">Customer Experience Enhancement</option>
+                    <option value="digital-transformation">Digital Transformation</option>
+                    <option value="merchandising">Merchandising Optimization</option>
+                    <option value="strategic-sourcing">Strategic Sourcing</option>
+                    <option value="collaborative-programs">Collaborative Programs</option>
+                </select>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Book Consultation</button>
+            </form>
         </section>
     </main>
     <footer>

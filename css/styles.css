@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.products-container,
+.cart-container,
+.checkout-container,
+.order-summary {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.product,
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cart-total,
+.order-summary h3 {
+  margin-top: 20px;
+  font-weight: bold;
+}
