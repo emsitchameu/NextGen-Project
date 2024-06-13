@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NextGen Digital Impact LLC</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/scripts/checkout.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="NextGen Digital Impact LLC Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consultation-booking.html">Book a Consultation</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Checkout</h1>
+            <div class="checkout-container">
+                <h2>Order Summary</h2>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-total">Total: $0.00</div>
+                <form id="checkout-form">
+                    <h2>Billing Information</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                    <label for="state">State</label>
+                    <input type="text" id="state" required>
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" required>
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NextGen Digital Impact LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
